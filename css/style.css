@@ -12,6 +12,13 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
 .gridContainer {
   display: flex;
@@ -25,5 +32,22 @@ body {
   width: calc(100%/16);
   height: calc(100%/16);
   border: 1px solid #333;
+}
+
+#renderButton {
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 1;
+  background-color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.113);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+#renderButton:hover {
+  transform: translateY(-3px);
 }
 
