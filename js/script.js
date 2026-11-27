@@ -39,7 +39,8 @@ renderButton.addEventListener("click",()=>{
   const resize = prompt("Enter What size should the grid be ( 16 to 100 squares per side)?");
   const newSize = Number(resize);
 
-  if(newSize < 16 || newSize > 100) return;
+  if (!Number.isInteger(newSize) || newSize < 16 || newSize > 100) return;
+
   else {creatGrid(newSize)}
   
 
